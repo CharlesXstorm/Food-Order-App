@@ -15,7 +15,7 @@ function Home() {
     return (
         <div className={style.home}>
             <Nav />
-            {true && <StaticNav IsStatic={state.bodyHeight < 0 ? true : false} />}
+            {true && <StaticNav IsStatic={state.bodyHeight < -150 ? true : false} />}
             <Body />
         </div>
     )
