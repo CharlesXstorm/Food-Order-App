@@ -1,0 +1,35 @@
+
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+/*
+.App {
+  width: auto;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  border: 2px solid red;
+}
+
+ul{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+  grid-gap: 1em;
+  width: auto;
+  margin: auto;
+  align-items: center;
+  padding: 1em;
+  border: 2px solid rgb(0, 255, 21);
+}
+
+li{
+  list-style-type: none;
+  padding: 5em;
+  text-align: center;
+  background-color: rgb(122, 122, 122);
+  color: white;
+  border-radius: 6px;
+}
+*/

@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.shoppingbag{
+    color: rgb(193, 193, 193);
+    margin: auto;
+    width: auto;
+}
+.shopping{
+    font-size: 6em;
+    color: rgb(214, 214, 214);
+}
+.cartheader{
+    font-size: 18px;
+    font-weight: bolder;
+    font-family: 'Montserrat';
+    align-items: center;
+    text-align: center;
+}
+.cartbody{
+    padding-top: 2em;
+    align-items: center;
+    text-align: center;
+}
+.cartdesc{
+    padding: 2em 1em;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: 1.5em;
+}

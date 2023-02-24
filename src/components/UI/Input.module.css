@@ -1,0 +1,38 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.input{
+    display: grid;
+    grid-template-columns: 5% 95%;
+    grid-gap: 0em;
+    width: auto;
+    margin: auto;
+    padding-top: 1.5em;
+}
+input{
+    align-items: start;
+    text-align: left;
+    padding: 0.5em 2em 0.5em 0em;
+    border-radius:0px 12px 12px 0px;
+    width: 100%;
+    outline: none;
+    border: none;
+    font-family: 'Montserrat';
+    background-color: rgb(243, 243, 243);
+}
+.span{
+    align-items: center;
+    color: rgb(108, 108, 108);
+    padding: 0.5em 0em 0.5em 0.8em;
+    background-color: rgb(243, 243, 243);
+    border-radius: 12px 0px 0px 12px;
+    
+}
+@media only screen and (max-width:800px){
+    .input{
+        grid-template-columns: 15% 85%;
+    }
+}

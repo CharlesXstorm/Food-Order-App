@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.logo{
+    width: 30%;
+    margin: auto;
+    align-items: center;
+}
+@media only screen and (max-width:820px){
+    .logo{
+        width: 80%;
+    }
+}

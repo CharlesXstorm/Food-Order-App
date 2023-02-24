@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.card{
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.35);
+    padding: 2em;
+    background-color: white;
+}
+
+.sticky{
+    position: sticky;
+    top: 0;
+    
+}

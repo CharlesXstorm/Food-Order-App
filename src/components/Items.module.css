@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.items_header{
+    padding: 2em;
+    font-size: 16px;
+    font-weight: bolder;
+}
+.items_body{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-gap: 1em;
+}

@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.wrapper{
+    position: sticky;
+    top: 0;
+    
+}
+.sectionheader{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #85C441;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 14px;
+    padding-left: 1.5em;
+}
+.sectionbody{
+    padding-top: 1em;
+}
+
+.bodystatic{
+    border-bottom: 1px solid rgb(232, 232, 232);
+    padding: 1.5em;
+}
+.staticbtn{
+    display: flex;
+    gap: 5em;
+}
+.btn{
+    border: none;
+    outline: none;
+    background-color: white;
+}
+.bodycollapse{
+    background-color: rgb(243, 243, 243);
+    padding-bottom: 1em;
+}
+.bodycollapse_item{
+    margin-bottom: 1em;
+    padding: 1em 2em 0.5em 2em;
+}

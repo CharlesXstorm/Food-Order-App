@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.animarrow{
+    position: relative;
+    width: auto;
+    margin: auto;
+    margin-bottom: 2em;
+    transform: scale(0.6);
+}
+.arrow1{
+    position: absolute;
+    left: 40%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    gap: 0.4em;
+    grid-template-columns: repeat(auto-fit, minmax(20px,1fr));
+    align-items: center;
+    animation: move 1s infinite linear;
+}
+.arrow2{
+    position: absolute;
+    left: 40%;
+    bottom: 4;
+    display: flex;
+    justify-content: center;
+    gap: 0.4em;
+    grid-template-columns: repeat(auto-fit, minmax(20px,1fr));
+    align-items: center;
+    animation: move 1s infinite linear;
+}
+.arrow3{
+    position: absolute;
+    left: 40%;
+    bottom: 24px;
+    display: flex;
+    justify-content: center;
+    gap: 0.4em;
+    grid-template-columns: repeat(auto-fit, minmax(20px,1fr));
+    align-items: center;
+    animation: move 1s infinite linear;
+}
+.line1{
+    padding: 0.6em 0.1em ;
+    border-radius: 2px;
+    background-color: white;
+    transform: rotate(-30deg);
+}
+.line2{
+    padding: 0.6em 0.1em ;
+    border-radius: 2px;
+    background-color: white;
+    transform: rotate(30deg);
+}
+
+@keyframes move{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(8px);
+    }
+}
