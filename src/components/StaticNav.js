@@ -6,7 +6,8 @@ import Input from './UI/Input';
 function StaticNav(props) {
 
     const staticRef = useRef();
-    const {setStaticNav } = useContext(dataContext);
+    //const inputRef = useRef();
+    const { setStaticNav } = useContext(dataContext);
 
     useEffect(() => {
 
@@ -16,6 +17,8 @@ function StaticNav(props) {
 
         window.addEventListener('scroll', staticNav)
     }, [])
+
+
 
     const IsStatic = props.IsStatic;
 

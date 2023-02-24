@@ -13,12 +13,16 @@ export const DataContextProvider = (props) => {
         dispatch({ type: actionType.BODYHEIGHT, payload: val })
     }
 
-    const setStaticNav = (val)=>{
-        dispatch({type: actionType.STATICNAV, payload:val})
+    const setStaticNav = (val) => {
+        dispatch({ type: actionType.STATICNAV, payload: val })
+    }
+
+    const setInput = (val) => {
+        dispatch({ type: actionType.INPUT, payload: val })
     }
 
     return (
-        <dataContext.Provider value={{ state, setStaticNav, setBodyHeight }} >{props.children}</dataContext.Provider>
+        <dataContext.Provider value={{ state, setStaticNav, setBodyHeight, setInput }} >{props.children}</dataContext.Provider>
     )
 }
 
