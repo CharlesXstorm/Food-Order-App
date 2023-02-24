@@ -8,8 +8,13 @@
     width: auto;
     margin: auto;
     margin-bottom: 2em;
-    transform: scale(0.6);
+   
 }
+.chev{
+    font-size: 50px;
+    animation: move 1s infinite linear;
+}
+/*
 .arrow1{
     position: absolute;
     left: 40%;
@@ -55,12 +60,15 @@
     background-color: white;
     transform: rotate(30deg);
 }
+*/
 
 @keyframes move{
     0%{
         transform: translateY(0);
+        
     }
     100%{
         transform: translateY(8px);
+        
     }
 }
