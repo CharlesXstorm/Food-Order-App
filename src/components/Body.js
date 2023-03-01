@@ -7,6 +7,7 @@ import Section from './Section';
 import Card from './UI/Card';
 import Input from './UI/Input';
 import { foodApi } from './Dependencies/foodData';
+import ErrorModal from './ErrorModal';
 
 function Body() {
 
@@ -14,11 +15,6 @@ function Body() {
     const bodyRef = useRef();
     //const [input, setInput] = useState('');
     const [api, setApi] = useState([...foodApi])
-
-    /*
-    const inputRefHandler = (val) => {
-        setInput(val)
-    }*/
 
 
     useEffect(() => {
@@ -44,13 +40,14 @@ function Body() {
 
         let filteredFood = []
         let filteredApi = []
+        let IsError = false;
 
 
         for (let any of api) {
             let newdata = []
 
             for (let val of any.data) {
-                if (val.name.toLowerCase().includes(state.input.toLowerCase())) {
+                if (val.name.toLowerCase().includes(state.input.trim().toLowerCase()) || (val.desc.toLowerCase().includes(state.input.trim().toLowerCase()))) {
                     newdata = [...newdata, val]
 
                 }
@@ -61,6 +58,10 @@ function Body() {
         }
 
         filteredApi = filteredFood.filter((val) => val.data.length !== 0)
+
+        if (filteredApi.length == 0) {
+            IsError = !IsError;
+        }
 
 
 
@@ -84,6 +85,9 @@ function Body() {
                                     {
 
                                         filteredApi.map((food) => <Items key={food.id} category={food.category} data={food.data} />)
+                                    }
+                                    {
+                                        IsError && <ErrorModal />
                                     }
                                 </div>
                             </div>

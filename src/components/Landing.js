@@ -27,7 +27,8 @@ function Landing() {
 
 
             if (scrolly>(10/100*deviceHeight)&& (scrolly<(deviceHeight))){
-                window.scrollBy(0,20) 
+                window.scrollBy(0,10) 
+                //window.removeEventListener('scroll',handleScroll)
             }
 
         }

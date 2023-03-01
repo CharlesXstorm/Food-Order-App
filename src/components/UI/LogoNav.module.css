@@ -11,6 +11,14 @@
     width: 15%;
     /*transform: scale(0.5);*/
 }
+.btn{
+    border: none;
+    outline: none;
+    width: auto;
+    margin: auto;
+    padding: 0px;
+    background: none;
+}
 @media only screen and (max-width:600px){
     .logo{
         width: 80%;
