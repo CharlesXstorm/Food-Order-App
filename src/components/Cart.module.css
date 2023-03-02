@@ -31,3 +31,24 @@
     font-size: 14px;
     line-height: 1.5em;
 }
+.cartlist{
+    width: 100%;
+    margin: auto;
+    padding: 1em;
+    align-items: left;
+    justify-content: left;
+    color: #79b23c;
+    background-color: white;
+    font-family: 'Montserrat';
+}
+.btn{
+    color: white;
+    background-color: #79b23c;
+    width: auto;
+    margin: auto;
+    padding: 1em;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    align-items: center;
+}

@@ -13,6 +13,7 @@ function Input() {
     //props.refs(inputRef.current.value)
     setInput(inputRef.current.value)
     inputRef.current.value = "";
+    inputRef.current.blur();
 
   }
 

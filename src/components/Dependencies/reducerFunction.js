@@ -2,7 +2,8 @@
 export const InitialState = {
     bodyHeight: "",
     staticNav: "",
-    input: ""
+    input: "",
+    cart: {}
 }
 
 export const reducerFunction = (state, action) => {
@@ -21,6 +22,11 @@ export const reducerFunction = (state, action) => {
             return {
                 ...state,
                 input: action.payload
+            }
+        case "cart":
+            return {
+                ...state,
+                cart: {...state.cart,...action.payload}
             }
         default:
             return state

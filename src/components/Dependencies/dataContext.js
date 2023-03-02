@@ -21,8 +21,14 @@ export const DataContextProvider = (props) => {
         dispatch({ type: actionType.INPUT, payload: val })
     }
 
+    const setCart = (name,qty) => {
+
+        let val = {[name]: [name,qty]}
+        dispatch({ type: actionType.CART, payload: val })
+    }
+
     return (
-        <dataContext.Provider value={{ state, setStaticNav, setBodyHeight, setInput }} >{props.children}</dataContext.Provider>
+        <dataContext.Provider value={{ state, setStaticNav, setBodyHeight, setInput, setCart }} >{props.children}</dataContext.Provider>
     )
 }
 

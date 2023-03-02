@@ -1,5 +1,6 @@
 export const actionType = {
     BODYHEIGHT: 'bodyHeight',
     STATICNAV: 'staticNav',
-    INPUT: 'input'
+    INPUT: 'input',
+    CART: 'cart'
 }

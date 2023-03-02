@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.spancart{
+    color: black;
+    align-items: left;
+    text-align: left;
+}
+.spanbold{
+    font-weight: bolder;
+    font-size: 18px;
+    align-items: left;
+    text-align: left;
+}
+.desc{
+    display: flex;
+    
+    gap: 1em;
+    margin-bottom: 0.5em;
+}
