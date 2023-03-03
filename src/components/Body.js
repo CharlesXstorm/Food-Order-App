@@ -15,11 +15,22 @@ function Body() {
     const bodyRef = useRef();
     //const [input, setInput] = useState('');
     const [api, setApi] = useState([...foodApi])
+    const [isClicked, setIsClicked] = useState(false)
+    const [totalqty, setTotalqty] = useState(0)
 
+    const fixedBtnHandler = (event) => {
+        event.stopPropagation();
+        //console.log('hello')
+        setIsClicked((prev) => !prev)
+    }
+
+    const cartnofun = (val) => {
+        setTotalqty(val)
+    }
 
     useEffect(() => {
 
-
+        //cartnofun()
 
         const bodyfunc = () => {
 
@@ -31,7 +42,7 @@ function Body() {
 
         return (() => { window.removeEventListener('scroll', bodyfunc) })
 
-    }, [setBodyHeight])
+    }, [setBodyHeight, cartnofun])
 
 
 
@@ -72,7 +83,7 @@ function Body() {
                     <div className={style.left}>
                         <div className={style.leftheader}>
                             <div><h1>Food Menu</h1></div>
-                            <div>2000 83</div>
+                            <div className={style.deliv}><div><span className="material-symbols-outlined">Directions_Bike</span>&#8358;2000 </div> <div><span className="material-symbols-outlined">Thumb_up</span>98%</div></div>
                         </div>
                         <div className={style.leftbody}>
                             <div className={style.leftcat}>
@@ -90,12 +101,21 @@ function Body() {
                                         IsError && <ErrorModal />
                                     }
                                 </div>
+
+                                <div className={`${style.fixedbtn} ${isClicked && style.btnshrink}`} onClick={fixedBtnHandler}>
+                                    <span className={style.label}>{totalqty}X</span><div>cart</div>
+                                </div>
+
+                                <div className={`${style.mobilecart} ${isClicked && style.cartgrow}`}>
+                                    <Card className={'sticky'}> <Cart cartno={cartnofun} /></Card>
+                                </div>
+
                             </div>
                         </div>
                     </div>
 
                     <div className={style.right}>
-                        <Card className={'sticky'}> <Cart /></Card>
+                        <Card className={'sticky'}> <Cart cartno={cartnofun} /></Card>
                     </div>
                 </div>
             </div>
@@ -111,8 +131,9 @@ function Body() {
                     <div className={style.left}>
                         <div className={style.leftheader}>
                             <div><h1>Food Menu</h1></div>
-                            <div>2000 83</div>
+                            <div className={style.deliv}><div><span className="material-symbols-outlined">Directions_Bike</span>&#8358;2000 </div> <div><span className="material-symbols-outlined">Thumb_up</span>98%</div></div>
                         </div>
+
                         <div className={style.leftbody}>
                             <div className={style.leftcat}>
                                 <Section />
@@ -126,12 +147,22 @@ function Body() {
                                         foodApi.map((food) => <Items key={food.id} category={food.category} data={food.data} />)
                                     }
                                 </div>
+
+                                <div className={`${style.fixedbtn} ${isClicked && style.btnshrink}`} onClick={fixedBtnHandler}>
+                                    <span className={style.label}>{totalqty}X</span><div>cart</div>
+                                </div>
+
+                                <div className={`${style.mobilecart} ${isClicked && style.cartgrow}`}>
+                                    <Card className={'sticky'}> <Cart cartno={cartnofun} /></Card>
+                                </div>
+
                             </div>
                         </div>
+
                     </div>
 
                     <div className={style.right}>
-                        <Card className={'sticky'}> <Cart /></Card>
+                        <Card className={'sticky'}> <Cart cartno={cartnofun} /></Card>
                     </div>
                 </div>
             </div>

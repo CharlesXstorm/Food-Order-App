@@ -12,7 +12,7 @@
     margin: auto;
     width: auto;
     color: white;
-    font-family: 'Lobster';
+    font-family: 'Montserrat';
 }
 .mouse_header{
     width: auto;
@@ -69,7 +69,8 @@
         
         /*background-color: #00000075;*/
         border-radius: 16px;
-        background-image: linear-gradient(rgba(0, 0, 0, 0), #9ea51779);
+        background-image: linear-gradient(rgba(0, 0, 0, 0), #00000079);
+        /*background-image: linear-gradient(rgba(0, 0, 0, 0), #9ea51779);*/
         
     }
 }

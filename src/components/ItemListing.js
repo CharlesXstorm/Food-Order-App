@@ -1,29 +1,52 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import style from './ItemListing.module.css';
 import Card from './UI/Card';
 import { dataContext } from './Dependencies/dataContext';
 
 function ItemListing(props) {
 
-    const {setCart} = useContext(dataContext)
-    const [name, setName] = useState('')
+    const { state, setCart, setCartno } = useContext(dataContext)
+    const [name, setName] = useState("")
     const [qty, setQty] = useState(0)
+
+
+    useEffect(() => {
+
+        if ((qty == 0) && (name == "")) {
+            return
+
+        } else {
+            
+            setCart(name, qty);
+            //setCartno(qty)
+            //console.log(state.cartno)
+            //console.log(qty)
+        }
+
+    }, [qty])
+
+    
 
     const addClickHandler = () => {
         setQty((prev) => prev + 1)
         setName(props.name)
-        setCart(name,qty)
+        //setCartno(qty)
+
     }
 
     const subClickHandler = () => {
+
         if (qty > 0) {
             setQty((prev) => prev - 1)
-            setName(props.name)
-            setCart(name,qty)
+            //setCartno(0 - 1)
+
         } else {
-            return
+            setQty(0)
+
         }
+
     }
+
 
     return (
 

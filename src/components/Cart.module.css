@@ -18,11 +18,14 @@
     font-family: 'Montserrat';
     align-items: center;
     text-align: center;
+    margin-bottom: 1em;
 }
 .cartbody{
-    padding-top: 2em;
+    padding-top: 0em;
     align-items: center;
     text-align: center;
+    height: 12em;
+    overflow-y: scroll;
 }
 .cartdesc{
     padding: 2em 1em;
