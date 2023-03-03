@@ -22,14 +22,16 @@ function Landing() {
             //console.log(event.currentTarget)
             //console.log(inner.current.scrollY)
             //if (scrooly < deviceHeight)
+
+
             setHeight(scrolly < deviceHeight ? scrolly : 0)
             setscrollData(scrolly < deviceHeight ? {scrollY: scrolly, deviceHeight: deviceHeight} : {});
 
 
-            if (scrolly>(10/100*deviceHeight)&& (scrolly<(deviceHeight))){
+            /*if (scrolly>(10/100*deviceHeight)&& (scrolly<(deviceHeight))){
                 window.scrollBy(0,10) 
                 //window.removeEventListener('scroll',handleScroll)
-            }
+            }*/
 
         }
 
