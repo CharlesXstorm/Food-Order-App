@@ -7,6 +7,7 @@
     padding: 2em;
     font-size: 16px;
     font-weight: bolder;
+    scroll-margin-top: 18em;
 }
 .items_body{
     display: grid;

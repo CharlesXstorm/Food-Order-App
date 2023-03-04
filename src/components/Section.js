@@ -1,14 +1,19 @@
-import React, {useContext} from 'react';
+import React, { useContext, useState } from 'react';
 import { dataContext } from './Dependencies/dataContext';
 import style from './Section.module.css';
 import SectLogo from './UI/SectLogo';
 
 function Section() {
 
-    const {state} = useContext(dataContext)
+    const { state } = useContext(dataContext)
+    const [isexpanded, setIsexpanded] = useState(true)
+
+    const onClickHandler = () => {
+        setIsexpanded((prev) => !prev)
+    }
 
     return (
-        <div className={style.wrapper} style={{top:`${state.staticNav+50}px`}}>
+        <div className={style.wrapper} style={{ top: `${state.staticNav + 50}px` }}>
             <div className={style.sectionheader}>
                 <SectLogo />
                 <div>Sections</div>
@@ -16,17 +21,21 @@ function Section() {
             <div className={style.sectionbody}>
 
                 <div className={style.bodystatic}>Top Sellers</div>
-                <div className={`${style.bodystatic} ${style.staticbtn}`}>Menu <button className={style.btn}> <span className="material-symbols-outlined">expand_more</span></button>
+                <div className={`${style.bodystatic} ${style.staticbtn}`}>Menu
+                    <button className={style.btn} onClick={onClickHandler}>
+                        {isexpanded && <span className="material-symbols-outlined">expand_more</span>}
+                        {!isexpanded && <span className="material-symbols-outlined">expand_less</span>}
+                    </button>
                 </div>
 
-                <div className={style.bodycollapse}>
-                    <div className={style.bodycollapse_item}>Rice</div>
-                    <div className={style.bodycollapse_item}>Soups</div>
-                    <div className={style.bodycollapse_item}>Pasta</div>
-                    <div className={style.bodycollapse_item}>Side</div>
-                    <div className={style.bodycollapse_item}>Swallow</div>
-                    <div className={style.bodycollapse_item}>Protiens</div>
-                    <div className={style.bodycollapse_item}>Soft Drinks</div>
+                <div className={`${style.bodycollapse} ${!isexpanded && style.bodyshrink}`}>
+                    <div className={style.bodycollapse_item}><a href="#10">Rice</a></div>
+                    <div className={style.bodycollapse_item}><a href="#20">Soups</a></div>
+                    <div className={style.bodycollapse_item}><a href="#30">Pasta</a></div>
+                    <div className={style.bodycollapse_item}><a href="#40">Side</a></div>
+                    <div className={style.bodycollapse_item}><a href="#50">Swallow</a></div>
+                    <div className={style.bodycollapse_item}><a href="#60">Protiens</a></div>
+                    <div className={style.bodycollapse_item}><a href="#70">Soft Drinks</a></div>
                 </div>
             </div>
 

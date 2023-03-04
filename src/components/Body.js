@@ -42,7 +42,7 @@ function Body() {
 
         return (() => { window.removeEventListener('scroll', bodyfunc) })
 
-    }, [setBodyHeight, cartnofun])
+    }, [setBodyHeight])
 
 
 
@@ -95,7 +95,7 @@ function Body() {
                                 <div>
                                     {
 
-                                        filteredApi.map((food) => <Items key={food.id} category={food.category} data={food.data} />)
+                                        filteredApi.map((food) => <Items key={food.id} id={food.id} category={food.category} data={food.data} />)
                                     }
                                     {
                                         IsError && <ErrorModal />
@@ -144,7 +144,7 @@ function Body() {
                                 <div>
                                     {
 
-                                        foodApi.map((food) => <Items key={food.id} category={food.category} data={food.data} />)
+                                        foodApi.map((food) => <Items key={food.id} id={food.id} category={food.category} data={food.data} />)
                                     }
                                 </div>
 

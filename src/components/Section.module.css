@@ -1,14 +1,16 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
 }
-.wrapper{
+
+.wrapper {
     position: sticky;
     top: 0;
-    
+
 }
-.sectionheader{
+
+.sectionheader {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -18,28 +20,52 @@
     font-size: 14px;
     padding-left: 1.5em;
 }
-.sectionbody{
+
+.sectionbody {
     padding-top: 1em;
 }
 
-.bodystatic{
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #85C441;
+}
+
+.bodystatic {
     border-bottom: 1px solid rgb(232, 232, 232);
     padding: 1.5em;
 }
-.staticbtn{
+
+.staticbtn {
     display: flex;
     gap: 5em;
 }
-.btn{
+
+.btn {
     border: none;
     outline: none;
     background-color: white;
 }
-.bodycollapse{
+
+.bodycollapse {
     background-color: rgb(243, 243, 243);
     padding-bottom: 1em;
+    height: 40em;
+    overflow: hidden;
+    transition: all 0.5s;
 }
-.bodycollapse_item{
+
+.bodyshrink {
+    height: 0px;
+    padding: 0px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.bodycollapse_item {
     margin-bottom: 1em;
     padding: 1em 2em 0.5em 2em;
 }

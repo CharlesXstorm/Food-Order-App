@@ -10,7 +10,7 @@ function Items(props) {
 
     return (
         <div className={style.items}>
-            <div className={style.items_header}>{category}</div>
+            <div className={style.items_header} id={props.id}>{category}</div>
             <div className={style.items_body}>
                 {data.map((item) => <ItemListing key={item.id} name={item.name} desc={item.desc} price={item.price} src={item.src} />)}
 
