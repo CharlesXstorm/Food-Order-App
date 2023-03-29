@@ -12,10 +12,10 @@
 }
 .loader_cont{
     position: relative;
-    top: 4em;
     margin: auto;
     width: 50%;
     margin-top: 8em;
+    transform: scale(.5);
 }
 .spinner{
     position: relative;
@@ -33,5 +33,11 @@
     }
     100%{
         transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .loader_cont{
+        transform: scale(1);
     }
 }
