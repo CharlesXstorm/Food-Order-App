@@ -1,5 +1,7 @@
 # FOOD ORDER APP (IYA BUKA)
 
+click on image to visit 🌐
+
 <a href="https://iyabuka.netlify.app/" target="_blank"><img width="1227" alt="iyabuka" src="https://user-images.githubusercontent.com/26228761/235384821-7b65e86d-378e-42c5-a68b-bd647df133a0.png"></a>
 
 This is a react project, bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
