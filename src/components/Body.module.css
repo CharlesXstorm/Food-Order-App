@@ -1,24 +1,24 @@
 * {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
 .body {
-    position: relative;
-    z-index: 1;
-    top: -50px;
-    width: auto;
-    margin: auto;
-    padding: 1em 6em;
+  position: relative;
+  z-index: 1;
+  top: -50px;
+  width: auto;
+  margin: auto;
+  padding: 1em 6em;
 
-    /*background-color: rgb(0, 129, 241);*/
+  /*background-color: rgb(0, 129, 241);*/
 }
 
 .content {
-    display: grid;
-    grid-template-columns: 80% 20%;
-    grid-gap: 20px;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-gap: 20px;
 }
 
 /*
@@ -28,32 +28,31 @@
     background-color: brown;
 }*/
 h1 {
-    color: black;
-    font-size: 45px;
-    font-family: 'Montserrat';
-    font-weight: bolder;
-    margin-bottom: 0.5em;
+  color: black;
+  font-size: 45px;
+  font-family: "Montserrat";
+  font-weight: bolder;
+  margin-bottom: 0.5em;
 }
 
 .leftheader {
-    padding: 2em;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.35);
-    border-radius: 10px;
-    background-color: white;
+  padding: 2em;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+  background-color: white;
 }
 
 .leftbody {
-    display: grid;
-    grid-template-columns: 20% 80%;
-    grid-gap: 0px;
-
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-gap: 0px;
 }
 
 .leftcat {
-    /*-webkit-position: sticky;
+  /*-webkit-position: sticky;
     position: sticky;
     top: 0px;*/
-    padding: 1.5em;
+  padding: 1.5em;
 }
 
 /*
@@ -62,129 +61,123 @@ h1 {
     /*padding: 20em 4em;
 }*/
 .right {
-    /*-webkit-position: sticky;
+  /*-webkit-position: sticky;
     position: sticky;
     top: 0px;*/
-    border-radius: 8px;
-
+  border-radius: 8px;
 }
 
 .mobilecart {
-    display: none;
-    position: fixed;
-    width: 70%;
+  display: none;
+  position: fixed;
+  width: 70%;
 
-    z-index: 2;
-    top: 40vh;
-    right: -20em;
-    transition: all 0.5s;
+  z-index: 2;
+  top: 40vh;
+  /* right: -20em; */
+  right: -100%;
+  transition: all 0.5s;
 }
 
 .deliv {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-.deliv>div>span {
-    margin-right: 0.4em;
+.deliv > div > span {
+  margin-right: 0.4em;
 }
 
-.deliv>div {
-    display: flex;
-    margin-right: 1.5em;
-    align-items: center;
+.deliv > div {
+  display: flex;
+  margin-right: 1.5em;
+  align-items: center;
 }
 .cartgrow {
-    display: none;
-    position: fixed;
-    z-index: 2;
-    top: 40vh;
-    right: 0px;
-    transition: all 0.5s;
+  display: none;
+  position: fixed;
+  z-index: 2;
+  top: 40vh;
+  right: 0px;
+  transition: all 0.5s;
 }
 
 .fixedbtn {
-    display: none;
-    position: fixed;
-    z-index: 4;
-    top: 50vh;
-    right: 0px;
-    padding: 1em;
-    border-radius: 10px 0px 0px 10px;
-    font-family: "Montserrat";
-    background-color: #79b23c;
-    color: white;
-    transition: all 0.5s;
+  display: none;
+  position: fixed;
+  z-index: 4;
+  top: 50vh;
+  right: 0px;
+  padding: 1em;
+  border-radius: 10px 0px 0px 10px;
+  font-family: "Montserrat";
+  background-color: #79b23c;
+  color: white;
+  transition: all 0.5s;
 }
 
 .btnshrink {
-    display: none;
-    position: fixed;
-    z-index: 4;
-    top: 50vh;
-    right: -35px;
-    padding: 1em 0em 1em 1em;
-    border-radius: 10px 0px 0px 10px;
-    font-family: "Montserrat";
-    background-color: #79b23c;
-    color: white;
-    transition: all 0.5s;
+  display: none;
+  position: fixed;
+  z-index: 4;
+  top: 50vh;
+  right: -35px;
+  padding: 1em 0em 1em 1em;
+  border-radius: 10px 0px 0px 10px;
+  font-family: "Montserrat";
+  background-color: #79b23c;
+  color: white;
+  transition: all 0.5s;
 }
 
 .label {
-
-    font-weight: bolder;
-    font-style: italic;
-    margin-right: 1em;
-    font-size: 18px;
+  font-weight: bolder;
+  font-style: italic;
+  margin-right: 1em;
+  font-size: 18px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .leftcat {
+    display: none;
+  }
 
+  .leftbody {
+    display: block;
+    width: auto;
+    margin: auto;
+  }
 
-@media only screen and (max-width:1024px) {
+  .body {
+    padding: 2em;
+  }
 
-    .leftcat {
-        display: none;
-    }
-
-    .leftbody {
-        display: block;
-        width: auto;
-        margin: auto;
-    }
-
-    .body {
-
-        padding: 2em;
-    }
-
-    h1 {
-        font-size: 25px;
-    }
+  h1 {
+    font-size: 25px;
+  }
 }
 
-@media only screen and (max-width:960px) {
-    .right {
-        display: none;
-    }
+@media only screen and (max-width: 960px) {
+  .right {
+    display: none;
+  }
 
-    .mobilecart {
-        display: block;
-    }
+  .mobilecart {
+    display: block;
+    /* left: 50px; */
+  }
 
-    .fixedbtn {
-        display: flex;
-    }
+  .fixedbtn {
+    display: flex;
+  }
 
-    .btnshrink {
-        display: flex;
-    }
+  .btnshrink {
+    display: flex;
+  }
 
-    .content {
-        display: block;
-        width: auto;
-        margin: auto;
-
-    }
-
+  .content {
+    display: block;
+    width: auto;
+    margin: auto;
+  }
 }

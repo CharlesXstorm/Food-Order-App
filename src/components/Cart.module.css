@@ -1,58 +1,59 @@
-*{
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
-.shoppingbag{
-    color: rgb(193, 193, 193);
-    margin: auto;
-    width: auto;
+.shoppingbag {
+  color: rgb(193, 193, 193);
+  margin: auto;
+  width: auto;
 }
-.shopping{
-    font-size: 6em;
-    color: rgb(214, 214, 214);
+.shopping {
+  font-size: 6em;
+  color: rgb(214, 214, 214);
 }
-.cartheader{
-    font-size: 18px;
-    font-weight: bolder;
-    font-family: 'Montserrat';
-    align-items: center;
-    text-align: center;
-    margin-bottom: 1em;
+.cartheader {
+  font-size: 18px;
+  font-weight: bolder;
+  font-family: "Montserrat";
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1em;
 }
-.cartbody{
-    padding-top: 0em;
-    align-items: center;
-    text-align: center;
-    height: 12em;
-    overflow-y: scroll;
+.cartbody {
+  padding-top: 0em;
+  align-items: center;
+  text-align: center;
+  height: 12em;
+  overflow-y: auto;
 }
-.cartdesc{
-    padding: 2em 1em;
-    text-align: center;
-    font-family: 'Montserrat';
-    font-size: 14px;
-    line-height: 1.5em;
+.cartdesc {
+  padding: 2em 1em;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 14px;
+  line-height: 1.5em;
 }
-.cartlist{
-    width: 100%;
-    margin: auto;
-    padding: 1em;
-    align-items: left;
-    justify-content: left;
-    color: #79b23c;
-    background-color: white;
-    font-family: 'Montserrat';
+.cartlist {
+  width: 100%;
+  margin: auto;
+  padding: 1em;
+  align-items: left;
+  justify-content: left;
+  color: #79b23c;
+  background-color: white;
+  font-family: "Montserrat";
 }
-.btn{
-    color: white;
-    background-color: #79b23c;
-    width: auto;
-    margin: auto;
-    padding: 1em;
-    border: none;
-    border-radius: 8px;
-    text-align: center;
-    align-items: center;
-    font-family: 'Montserrat';
+.btn {
+  color: white;
+  background-color: #79b23c;
+  width: auto;
+  margin: auto;
+  padding: 1em;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  align-items: center;
+  font-family: "Montserrat";
+  cursor: pointer;
 }
