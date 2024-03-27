@@ -65,8 +65,8 @@ function Landing() {
         }}
       >
         <img
-          src="https://images2.imgbox.com/78/5b/gpHiJhMC_o.png"
-          alt="soup"
+          src="https://dl.dropboxusercontent.com/scl/fi/jz2czrtv2ml2a5iwo1ctg/ricepng.png?rlkey=8g9vgnrqryzmv44l324grszwx&dl=0"
+          alt="rice"
           width="500px"
         />
       </div>
@@ -79,7 +79,7 @@ function Landing() {
         }}
       >
         <img
-          src="https://images2.imgbox.com/cf/2f/4KYdaHV8_o.png"
+          src="https://dl.dropboxusercontent.com/scl/fi/vd662k2wkatvf6i891he8/souppng.png?rlkey=qon1uewi6zwjgjv6jdkfcvkht&dl=0"
           alt="soup"
           width="500px"
         />
